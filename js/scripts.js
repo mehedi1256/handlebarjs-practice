@@ -9,34 +9,44 @@ const cast = {
         },
         {
             "name": "Mehedi Hassan Shovo",
-            "shortCode": "mehedi",
+            "shortCode": "game-of-throne1",
             "actor": "Mehedi Hassan Shovo",
             "house": "Khulna",
             "location": "Khulna"
         },
         {
             "name": "MD. Rahim Uddin",
-            "shortCode": "rahim",
+            "shortCode": "game-of-throne2",
             "actor": "MD. Rahim Uddin",
             "house": "Dhaka",
             "location": "Dhaka"
         },
         {
             "name": "Raihan Ahmed",
-            "shortCode": "raihan",
+            "shortCode": "game-of-throne3",
             "actor": "Raihan Ahmed",
             "house": "Barisal",
             "location": "Barisal"
         },
         {
             "name": "Jashim Uddin",
-            "shortCode": "jashim",
+            "shortCode": "game-of-throne4",
             "actor": "Jashim Uddin",
             "house": "Bogra",
             "location": "Bogra"
         }
        
     ]
+
+
+    // normal array string
+   /*  characters: [
+        "John Snow",
+            "game-of-throne",
+            "Kit Harrington",
+            "Stark",
+            "The Wall"
+    ] */
 }
 
 
@@ -44,7 +54,7 @@ const cast = {
 $(document).ready(function() {
     var characterTemplate = $("#character-template").html();
     var compiledCharacterTemplate = Handlebars.compile(characterTemplate);
-    $(".character-list-container").html(compiledCharacterTemplate(cast.characters[0]));
+    $(".character-list-container").html(compiledCharacterTemplate(cast));
 });
 
 

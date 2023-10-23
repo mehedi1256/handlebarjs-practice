@@ -12,13 +12,18 @@
     <ul class="character-list-container"></ul>
 
     <script id="character-template" type="text/x-handlebars-template">
+        {{#each characters}}
         <li class="character">
             <img src="./images/{{shortCode}}.jpg" alt="picture">
-            <h2>{{name}}</h2>
+            <!-- for array object -->
+            <h2>{{@index}} {{@first}} {{@last}} {{name}}</h2>
+            <!-- for normal array string -->
+            <!-- <h2>{{this}}</h2> -->
             <p>Actor: {{actor}}</p>
             <p>House: {{house}}</p>
             <p>Locaton: {{location}} </p>
         </li>
+        {{/each}}
     </script>
 
 
