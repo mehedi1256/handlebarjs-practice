@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>handlebarjs</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <h1>Game of Thrones</h1>
+    <ul class="character-list-container"></ul>
+
+    <script id="character-template" type="text/x-handlebars-template">
+        <li class="character">
+            <img src="./images/{{shortCode}}.jpg" alt="picture">
+            <h2>{{name}}</h2>
+            <p>Actor: {{actor}}</p>
+            <p>House: {{house}}</p>
+            <p>Locaton: {{location}} </p>
+        </li>
+    </script>
+
+
+    <script src="./js/jquery-v3.7.1.min.js"></script>
+    <script src="./js/handlebarjs-v4.7.8.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
