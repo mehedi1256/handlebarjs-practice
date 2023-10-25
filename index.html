@@ -20,7 +20,12 @@
             <!-- for normal array string -->
             <!-- <h2>{{this}}</h2> -->
             <p>Actor: {{actor}}</p>
-            <p>House: {{house}}</p>
+            {{#with house}}
+            {{#if name}}<p>House Name: {{name}}</p>{{/if}}
+            {{#if seat}} <p>House Seat: {{seat}}</p> {{/if}}
+            {{#if words}} <p>House Words: {{words}}</p> {{/if}}
+            {{../name}}
+            {{/with}}
             <p>Locaton: {{#if location}} {{location}} {{else if house}} {{house}} {{else}} unknown {{/if}} </p>
             {{#unless location}} Whereabouts are unknown... {{/unless}}
         </li>
