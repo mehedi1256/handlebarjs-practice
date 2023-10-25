@@ -58,4 +58,11 @@ $(document).ready(function() {
     $.ajax("./data/cast.json").done(function(cast) {
         $(".character-list-container").html(compiledCharacterTemplate(cast));
     });
+
+    $(".character-list-container").on("click", ".view-details", function(e) {
+        e.preventDefault();
+        console.log("Button Click!");
+    });
+
+    
 });

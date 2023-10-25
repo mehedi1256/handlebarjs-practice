@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>handlebarjs</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+
     <h1>Game of Thrones</h1>
     <ul class="character-list-container"></ul>
 
@@ -16,7 +18,8 @@
         <li class="character">
             <img src="./images/{{shortCode}}.jpg" alt="picture">
             <!-- for array object -->
-            <h2>{{@index}} {{@first}} {{@last}} {{name}}</h2>
+            <div class="character-details">
+                <h2>{{@index}} {{@first}} {{@last}} {{name}}</h2>
             {{formatName name house.name}}
             {{formatPhoneNumber house.phone}}
             <!-- for normal array string -->
@@ -30,6 +33,8 @@
             {{/with}}
             <p>Locaton: {{#if location}} {{location}} {{else if house}} {{house}} {{else}} unknown {{/if}} </p>
             {{#unless location}} Whereabouts are unknown... {{/unless}}
+        </div>
+        <a href="#" class="button view-details">View details &#8674;</a>
         </li>
         {{/each}}
     </script>
@@ -39,4 +44,5 @@
     <script src="./js/handlebarjs-v4.7.8.js"></script>
     <script src="./js/scripts.js"></script>
 </body>
+
 </html>
