@@ -5,21 +5,24 @@ const cast = {
             "shortCode": "game-of-throne",
             "actor": "Kit Harrington",
             "house": "Stark",
-            "location": "The Wall"
+            // "location": "The Wall"
+            "location": undefined
         },
         {
             "name": "Mehedi Hassan Shovo",
             "shortCode": "game-of-throne1",
             "actor": "Mehedi Hassan Shovo",
             "house": "Khulna",
-            "location": "Khulna"
+            // "location": "Khulna"
+            "location": null
         },
         {
             "name": "MD. Rahim Uddin",
             "shortCode": "game-of-throne2",
             "actor": "MD. Rahim Uddin",
             "house": "Dhaka",
-            "location": "Dhaka"
+            // "location": "Dhaka"
+            "location": false
         },
         {
             "name": "Raihan Ahmed",
@@ -56,5 +59,3 @@ $(document).ready(function() {
     var compiledCharacterTemplate = Handlebars.compile(characterTemplate);
     $(".character-list-container").html(compiledCharacterTemplate(cast));
 });
-
-

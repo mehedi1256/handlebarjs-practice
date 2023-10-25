@@ -21,7 +21,8 @@
             <!-- <h2>{{this}}</h2> -->
             <p>Actor: {{actor}}</p>
             <p>House: {{house}}</p>
-            <p>Locaton: {{location}} </p>
+            <p>Locaton: {{#if location}} {{location}} {{else if house}} {{house}} {{else}} unknown {{/if}} </p>
+            {{#unless location}} Whereabouts are unknown... {{/unless}}
         </li>
         {{/each}}
     </script>
