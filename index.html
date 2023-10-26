@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>handlebarjs</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <h1>Game of Thrones</h1>
     <ul class="character-list-container"></ul>
 
     <script id="character-template" type="text/x-handlebars-template">
-        {{#each characters}}
-        <li class="character">
-            <img src="./images/{{shortCode}}.jpg" alt="picture">
-            <!-- for array object -->
-            {{> characterDetailsPartial}}
-            <a href="cast-details.html?id={{@index}}" class="button view-details">View details &#8674;</a>
-        </li>
-        {{/each}}
+      {{#each characters}}
+      <li class="character">
+          <img src="./images/{{shortCode}}.jpg" alt="picture">
+          <!-- for array object -->
+          {{> characterDetailsPartial}}
+          <a href="cast-details.html?id={{@index}}" class="button view-details">View details &#8674;</a>
+      </li>
+      {{/each}}
     </script>
-
 
     <script src="./js/jquery-v3.7.1.min.js"></script>
     <script src="./js/handlebarjs-v4.7.8.js"></script>
     <script src="./js/scripts.js"></script>
-</body>
-
+  </body>
 </html>

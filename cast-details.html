@@ -1,37 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>handlebarjs</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body class="page-cast-details">
-
+  <body class="page-cast-details">
     <h1>Game of Thrones | Cast Details</h1>
     <section class="character-list-container"></section>
 
     <script id="character-template" type="text/x-handlebars-template">
-        
-        <div class="character">
-            <img src="./images/{{shortCode}}.jpg" alt="picture">
-            <!-- for array object -->
-            <!-- partial -->
-            {{> characterDetailsPartial}}
-            <a href="index.html" class="button view-details">Back</a>
-        </div>
-        <div class="character-bio-container">
-            <p><strong>Bio: </strong>{{bio}}</p>
-        </div>
-       
-    </script>
 
+      <div class="character">
+          <img src="./images/{{shortCode}}.jpg" alt="picture">
+          <!-- for array object -->
+          <!-- partial -->
+          {{> characterDetailsPartial}}
+          <a href="index.html" class="button view-details">Back</a>
+      </div>
+      <div class="character-bio-container">
+          <p><strong>Bio: </strong>{{bio}}</p>
+      </div>
+    </script>
 
     <script src="./js/jquery-v3.7.1.min.js"></script>
     <script src="./js/handlebarjs-v4.7.8.js"></script>
     <script src="./js/scripts.js"></script>
-</body>
-
+  </body>
 </html>
