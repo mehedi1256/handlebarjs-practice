@@ -13,6 +13,17 @@
 }
 */
 
+function getParameterByName(name, url) {
+    if(!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+    resutls = regex.exec(url);
+
+    if(!resutls) return null;
+    if(!resutls[2]) return '';
+    return decodeURIComponent(resutls[2].replace(/\+/g, " "));
+}
+
 
 /**
  * Custom Helpers in Handlebar js
@@ -54,13 +65,21 @@ Handlebars.registerHelper("toLower", function(options) {
 $(document).ready(function() {
     var characterTemplate = $("#character-template").html();
     var compiledCharacterTemplate = Handlebars.compile(characterTemplate);
+    var $characterList = $(".character-list-container");
+
+    var characterId = getParameterByName("id");
+    console.log("character id is: " + characterId);
 
     $.ajax("./data/cast.json").done(function(cast) {
-        $(".character-list-container").html(compiledCharacterTemplate(cast));
+        if($("body").hasClass("page-cast-details")) {
+            $characterList.html(compiledCharacterTemplate(cast.characters[characterId]));
+        }else {
+            $characterList.html(compiledCharacterTemplate(cast));
+        }
     });
 
     $(".character-list-container").on("click", ".view-details", function(e) {
-        e.preventDefault();
+        // e.preventDefault();
         console.log("Button Click!");
     });
 

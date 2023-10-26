@@ -32,6 +32,11 @@ h1 {
     margin: 0 auto;
 }
 
+.character-bio-container {
+    background: #fff;
+    padding: 10px;
+}
+
 .character {
     background-color: #fff;
     margin-bottom: 10px;

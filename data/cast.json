@@ -1,6 +1,6 @@
 {
     "characters": [
-        {
+        {   
             "name": "John Snow",
             "shortCode": "game-of-throne",
             "actor": "Kit Harrington",
@@ -11,7 +11,8 @@
                 "phone": null
                
             },
-            "location": "The Wall"
+            "location": "The Wall",
+            "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
         },
         {
             "name": "Mehedi Hassan Shovo",
@@ -23,7 +24,8 @@
                 "words": "Winter is comming",
                 "phone": 1771885596
             },
-            "location": "Khulna"
+            "location": "Khulna",
+            "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
         },
         {
             "name": "MD. Rahim Uddin",
@@ -35,7 +37,8 @@
                 "words": "Winter is comming",
                 "phone": 1771885596
             },
-            "location": "Dhaka"
+            "location": "Dhaka",
+            "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
         },
         {
             "name": "Raihan Ahmed",
@@ -47,7 +50,8 @@
                 "words": "Winter is comming",
                 "phone": 1771885596
             },
-            "location": "Barisal"
+            "location": "Barisal",
+            "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
         },
         {
             "name": "Jashim Uddin",
@@ -59,7 +63,8 @@
                 "words": "Winter is comming",
                 "phone": 1771885596
             },
-            "location": "Bogra"
+            "location": "Bogra",
+            "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
         }
        
     ]
