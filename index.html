@@ -18,22 +18,7 @@
         <li class="character">
             <img src="./images/{{shortCode}}.jpg" alt="picture">
             <!-- for array object -->
-            <div class="character-details">
-                <h2> {{name}}</h2>
-                {{formatName name house.name}}
-                {{formatPhoneNumber house.phone}}
-                <!-- for normal array string -->
-                <!-- <h2>{{this}}</h2> -->
-                <p>Actor: {{actor}}</p>
-                {{#with house}}
-                {{#if name}}<p>House Name: {{#makeBold}} {{name}} {{/makeBold}} </p>{{/if}}
-                {{#if seat}} <p>House Seat:  {{seat}}  </p> {{/if}}
-                {{#if words}} <p> {{#toLower}} House Words: {{words}} {{/toLower}} </p> {{/if}}
-                {{../name}}
-                {{/with}}
-                <p>Locaton: {{#if location}} {{location}} {{else if house}} {{house}} {{else}} unknown {{/if}} </p>
-                {{#unless location}} Whereabouts are unknown... {{/unless}}
-            </div>
+            {{> characterDetailsPartial}}
             <a href="cast-details.html?id={{@index}}" class="button view-details">View details &#8674;</a>
         </li>
         {{/each}}
